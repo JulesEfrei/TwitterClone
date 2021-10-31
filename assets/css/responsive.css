@@ -1,0 +1,85 @@
+@media screen and (max-width: 1023px) {
+    
+    
+
+    .menu_item_title, /*.tweet_button,*/ .user_name, .user_setting_button, aside {
+        display: none;
+    }
+
+    nav {
+        width: 4rem;
+        margin-right: 1rem;
+    }
+
+    .nav_bottom {
+        width: 10rem;
+    }
+
+    .tweet_button {
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+    }
+
+    .tweet_button:before {
+        display: block;
+        position: relative;
+        top: 5px;
+    }
+
+    .nav_bottom .logo {
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        min-width: 0;
+    }
+
+    ul, .nav_top {
+        width: 100vw;
+        height: auto !important;
+        position: fixed !important;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        bottom: 0;
+        z-index: 1000 !important;
+        background-color: #15202B;
+        padding-top: .5rem;
+        border-top: 2px solid #38444D;
+    }
+
+    .item_list:nth-child(1), .item_list:nth-child(6), .item_list:nth-child(7), .item_list:nth-child(8), .item_list:nth-child(9){
+        display: none;
+    }
+
+    .item_list .icon {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav_bottom, .make_tweet {
+        display: none;
+    }
+
+    nav {
+        margin: 0;
+        width: 0;
+    }
+
+    .tweet_button {
+        position: absolute;
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+}

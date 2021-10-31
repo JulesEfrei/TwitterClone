@@ -27,19 +27,23 @@ nav {
 
 nav .nav_top {
     position: relative;
-    width: 80%; /* 15rem */
+    width: 100%;
     height: 70%;
     padding-top: 1rem;
 }
 
 .nav_top .item_list {
     height: 2rem;
-    max-width: 100%;
+    width: 10rem;
     text-decoration: none;
     border-radius: 50px;
     margin-bottom: .5rem;
     display: flex;
     align-items: center;
+}
+
+.nav_top ul {
+    width: 90%;
 }
 
 .nav_top .item_list:not(:nth-child(1)) {
@@ -48,12 +52,11 @@ nav .nav_top {
 
 .item_list:nth-child(1) {
     margin-bottom: 1rem;
-    width: 50px;
     height: 50px;
 }
 .item_list:nth-child(1) svg{
     padding: 1rem;
-    width: 40px;
+    width: 50px;
     height: 40px;
 }
 .item_list:nth-child(1) svg:hover {
@@ -62,10 +65,10 @@ nav .nav_top {
 }
 
 .item_list svg {
-    min-width: 30px;
-    min-height: 30px;
-    max-width: 30px;
-    max-height: 30px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 25px;
+    max-height: 25px;
     margin-right: 1.5rem;
     color: white;
     fill: white;
@@ -76,7 +79,7 @@ nav .nav_top {
     font-weight: 500 ;
 }
 
-.item_list:hover {
+.item_list:not(:nth-child(1)):hover {
     background-color: #2D3741;
     cursor: pointer;
 }
@@ -96,14 +99,23 @@ nav .nav_top {
     cursor: pointer;
 } 
 
+.tweet_button::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f56b";
+    display: none;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 .nav_bottom {
     position: relative;
-    width: 85%;
+    width: 90%;
     height: 4rem;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    padding: .1rem 1rem;
+    padding: .1rem;
     border-radius: 50px;
 }
 
@@ -111,21 +123,22 @@ nav .nav_top {
     background-image: url("../img/UserLogo.jpeg");
     background-position: 50% 100%;
     background-size: 110%;
-    width: 50px;
+    width: 60px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .user_name {
     width: 55%;
 }
 .user_name #user_tag {
-    font-size: .9rem;
+    font-size: .8rem;
     color: #8899A6;
 }
 .user_name #name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
     margin-bottom: 5px;
 }
@@ -136,6 +149,7 @@ nav .nav_top {
     width: 20px;
     height: 20px;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .nav_bottom:hover {
@@ -149,6 +163,7 @@ main {
     position: relative;
     overflow-y: scroll;
     width: 38vw;
+    min-width: 32rem;
     height: 100vh;
     border-right: 2px solid #38444D;
     border-left: 2px solid #38444D;
@@ -300,7 +315,7 @@ main::-webkit-scrollbar {
     text-decoration: none;
 }
 
-.make_tweet_content textarea:focus + .input  {
+.make_tweet_content textarea:focus-within + .make_tweet_content_bottom .input  {
     background-color: #1A8CD8 !important;
     color: white !important;
 }
@@ -707,3 +722,4 @@ aside .input_content {
     background-color: #D7DBDC;
     cursor: pointer;
 }
+

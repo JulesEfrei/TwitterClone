@@ -33,6 +33,15 @@
     .nav_bottom .logo {
         width: 50px;
     }
+    
+    .item_list {
+        width: auto !important;
+    }
+
+    .nav_bottom {
+        width: 130% !important;
+        padding: 0;
+    }
 
 }
 
@@ -45,7 +54,7 @@
     }
 
     ul, .nav_top {
-        width: 100vw;
+        width: 100vw !important;
         height: auto !important;
         position: fixed !important;
         display: flex;
@@ -80,6 +89,10 @@
         position: absolute;
         bottom: 5rem;
         right: 1rem;
+    }
+
+    .item_list {
+        width: auto !important;
     }
 
 }

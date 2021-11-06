@@ -487,6 +487,7 @@ main::-webkit-scrollbar {
     border-radius: 10px;
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .one_tweet:nth-child(2) .tweet_content_img {

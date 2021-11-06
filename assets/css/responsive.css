@@ -1,8 +1,8 @@
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1100px) {
     
     
 
-    .menu_item_title, /*.tweet_button,*/ .user_name, .user_setting_button, aside {
+    .menu_item_title, .user_name, .nav_bottom .user_setting_button {
         display: none;
     }
 
@@ -19,7 +19,7 @@
         overflow: hidden;
         width: 40px;
         height: 40px;
-        margin: 0;
+        margin-left: .5rem;
         padding: 0;
         line-height: 2rem;
     }
@@ -41,6 +41,27 @@
     .nav_bottom {
         width: 130% !important;
         padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_bottom:hover{
+        background-color: none !important;
+    }
+
+    .nav_bottom .logo {
+        margin: 0;
+    }
+
+    .nav_bottom .logo:hover {
+        background-color: #2D3741;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    aside {
+        display: none;
     }
 
 }
@@ -94,5 +115,6 @@
     .item_list {
         width: auto !important;
     }
+
 
 }

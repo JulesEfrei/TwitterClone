@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   
-  <img src="./assets/img/GitHub/twitterLogo.jpeg" alt="Logo" width="400" height="200" />
+  <img src="./assets/img/GitHub/twitterLogo.jpeg" alt="Logo" width="400" height="400" />
 
   <h2 align="center">Twitter Clone</h2>
 
@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="./assets/img/GitHub/twitterClone.png" alt="Logo" width="950" height="550" />
+<img src="./assets/img/GitHub/twitterClone.png" alt="Logo" width="950" height="600" />
 
 Clone the home page of Twitter with only css (School Project)
 

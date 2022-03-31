@@ -60,7 +60,7 @@
 Clone the home page of Twitter with only css (School Project)
 
 
-**State of project => v1.0.0**
+**State of project => v1.0.1**
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

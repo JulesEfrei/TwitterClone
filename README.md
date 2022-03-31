@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   
-  <img src="./assets/img/GitHub/twitterLogo.jpeg" alt="Logo" width="400" height="400" />
+  <img src="./assets/img/GitHub/twitterLogo.jpeg" alt="Logo" width="200" height="200" />
 
   <h2 align="center">Twitter Clone</h2>
 
